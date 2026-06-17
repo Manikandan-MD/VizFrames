@@ -1,0 +1,102 @@
+{
+  "_version": "1.85.0",
+  "sap.app": {
+    "id": "vizframechart",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.26.0",
+      "toolsId": "f30fc32f-be7f-4bd7-8c7d-f255c0a24f81"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.149.0",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "vizframechart.i18n.i18n"
+        }
+      },
+      "chartModel":{
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/barchart.json"
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "transition": "slide",
+        "type": "View",
+        "viewType": "XML",
+        "path": "vizframechart.view",
+        "async": true,
+        "viewPath": "vizframechart.view"
+      },
+      "routes": [
+        {
+          "name": "RouteMainView",
+          "pattern": ":?query:",
+          "target": [
+            "TargetMainView"
+          ]
+        }
+      ],
+      "targets": {
+        "TargetMainView": {
+          "id": "MainView",
+          "name": "MainView"
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "vizframechart.view.App",
+      "type": "XML",
+      "id": "App",
+      "async": true
+    }
+  }
+}

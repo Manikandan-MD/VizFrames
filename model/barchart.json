@@ -1,0 +1,58 @@
+{
+    "barChartData": [
+        { "Category": "Jan", "Value": 120 },
+        { "Category": "Feb", "Value": 180 },
+        { "Category": "Mar", "Value": 150 },
+        { "Category": "Apr", "Value": 220 }
+    ],
+
+    "columnChartData": [
+        { "Product": "Laptop", "Quantity": 50 },
+        { "Product": "Mouse", "Quantity": 120 },
+        { "Product": "Keyboard", "Quantity": 80 },
+        { "Product": "Monitor", "Quantity": 40 }
+    ],
+
+    "pieChartData": [
+        { "Department": "IT", "Count": 35 },
+        { "Department": "HR", "Count": 15 },
+        { "Department": "Finance", "Count": 20 },
+        { "Department": "Sales", "Count": 30 }
+    ],
+
+    "donutChartData": [
+        { "Status": "Completed", "Value": 60 },
+        { "Status": "In Progress", "Value": 25 },
+        { "Status": "Pending", "Value": 15 }
+    ], 
+
+    "combinedChartData": [
+        {"Month":"Jan","Sales":120,"Profit":25},
+        {"Month":"Feb","Sales":180,"Profit":40},
+        {"Month":"Mar","Sales":150,"Profit":35},
+        {"Month":"Apr","Sales":220,"Profit":50}
+    ],
+
+    "stackedColumnData": [
+        {"Month":"Jan","Hardware":60,"Software":40},
+        {"Month":"Feb","Hardware":80,"Software":50},
+        {"Month":"Mar","Hardware":70,"Software":60},
+        {"Month":"Apr","Hardware":90,"Software":80}
+    ],
+
+    "bubbleChartData": [
+        {"Region":"North","Revenue":120,"Profit":30,"Customers":500},
+        {"Region":"South","Revenue":180,"Profit":50,"Customers":800},
+        {"Region":"East","Revenue":150,"Profit":40,"Customers":650},
+        {"Region":"West","Revenue":220,"Profit":70,"Customers":1000}
+    ],
+
+    "lineChartData": [
+        {"Month":"Jan","Revenue":120},
+        {"Month":"Feb","Revenue":180},
+        {"Month":"Mar","Revenue":150},
+        {"Month":"Apr","Revenue":220},
+        {"Month":"May","Revenue":260},
+        {"Month":"Jun","Revenue":300}
+    ]
+}
