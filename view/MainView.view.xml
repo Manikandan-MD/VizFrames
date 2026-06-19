@@ -5,6 +5,7 @@
     xmlns:viz.data="sap.viz.ui5.data"
     xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds"
     xmlns:l="sap.ui.layout">
+    <!-- git remote set-url origin https://UserName:ghp_xxxxxxxxxxxxxxxxxxxx@github.com/UserName/VizFrames.git -->
     <Page id="page" title="{i18n>title}">
         <content>
             <l:BlockLayout background="Dashboard" visible="true">
