@@ -74,20 +74,21 @@
                             </l:BlockLayoutCell>
                             <l:BlockLayoutCell id="Cell4" width="1">
                                 <l:content>
-                                    <viz:VizFrame id="idVizFrame4" uiConfig="{application: 'fiori'}" vizType="stacked_column" vizProperties="{title: {text: 'Stacked Column Chart'}, plotArea: {dataLabel: {visible: true}}}">
+                                    <viz:VizFrame id="idVizFrame4" uiConfig="{application: 'fiori'}" vizType="stacked_column" vizProperties="{title: {text: 'Demand Status For Next 6 Months'}, plotArea: {dataLabel: {visible: true}}}">
                                         <viz:dataset>
                                             <viz.data:FlattenedDataset data="{chartModel>/stackedColumnData}">
                                                 <viz.data:dimensions>
                                                     <viz.data:DimensionDefinition name="Month" value="{chartModel>Month}"></viz.data:DimensionDefinition>
                                                 </viz.data:dimensions>
                                                 <viz.data:measures>
-                                                    <viz.data:MeasureDefinition name="Hardware" value="{chartModel>Hardware}"></viz.data:MeasureDefinition>
-                                                    <viz.data:MeasureDefinition name="Software" value="{chartModel>Software}"></viz.data:MeasureDefinition>
+                                                    <viz.data:MeasureDefinition name="ProjectA" value="{chartModel>ProjectA}"></viz.data:MeasureDefinition>
+                                                    <viz.data:MeasureDefinition name="ProjectB" value="{chartModel>ProjectB}"></viz.data:MeasureDefinition>
+                                                    <viz.data:MeasureDefinition name="ProjectC" value="{chartModel>ProjectC}"></viz.data:MeasureDefinition>
                                                 </viz.data:measures>
                                             </viz.data:FlattenedDataset>
                                         </viz:dataset>
                                         <viz:feeds>
-                                            <viz.feeds:FeedItem uid="valueAxis" type="Measure" values="Hardware,Software"></viz.feeds:FeedItem>
+                                            <viz.feeds:FeedItem uid="valueAxis" type="Measure" values="ProjectA,ProjectB,ProjectC"></viz.feeds:FeedItem>
                                             <viz.feeds:FeedItem uid="categoryAxis" type="Dimension" values="Month"></viz.feeds:FeedItem>
                                         </viz:feeds>
                                     </viz:VizFrame>

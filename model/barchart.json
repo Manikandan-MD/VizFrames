@@ -34,10 +34,12 @@
     ],
 
     "stackedColumnData": [
-        {"Month":"Jan","Hardware":60,"Software":40},
-        {"Month":"Feb","Hardware":80,"Software":50},
-        {"Month":"Mar","Hardware":70,"Software":60},
-        {"Month":"Apr","Hardware":90,"Software":80}
+        {"Month":"Jan","ProjectA":120,"ProjectB":80,"ProjectC":60},
+        {"Month":"Feb","ProjectA":140,"ProjectB":90,"ProjectC":70},
+        {"Month":"Mar","ProjectA":160,"ProjectB":100,"ProjectC":80},
+        {"Month":"Apr","ProjectA":180,"ProjectB":110,"ProjectC":90},
+        {"Month":"May","ProjectA":200,"ProjectB":120,"ProjectC":100},
+        {"Month":"Jun","ProjectA":220,"ProjectB":130,"ProjectC":110}
     ],
 
     "bubbleChartData": [
