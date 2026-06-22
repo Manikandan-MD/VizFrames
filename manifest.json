@@ -52,7 +52,7 @@
           "bundleName": "vizframechart.i18n.i18n"
         }
       },
-      "chartModel":{
+      "chartModel": {
         "type": "sap.ui.model.json.JSONModel",
         "uri": "model/barchart.json"
       }
@@ -98,5 +98,9 @@
       "id": "App",
       "async": true
     }
+  },
+  "sap.cloud": {
+    "public": true,
+    "service": "vizframechart"
   }
 }
